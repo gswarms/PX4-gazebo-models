@@ -32,7 +32,7 @@
           <!-- <triggered>true</triggered> -->
           <!-- <trigger_topic>/camera/trigger</trigger_topic> -->
           <box_type>2d</box_type>
-          <horizontal_fov>1.3962634</horizontal_fov>
+          <horizontal_fov>2.0857</horizontal_fov>
           <optical_frame_id>/bbox_camera</optical_frame_id>
           <camera_info_topic>/bbox_camera/camera_info</camera_info_topic>
           <image>
