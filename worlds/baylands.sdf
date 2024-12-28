@@ -204,5 +204,8 @@
       <longitude_deg>-121.998878727967</longitude_deg>
       <elevation>38</elevation>
     </spherical_coordinates>
+    <include>
+      <uri>model://arucotag</uri>
+    </include>
   </world>
 </sdf>

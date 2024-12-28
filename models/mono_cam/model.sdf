@@ -20,10 +20,6 @@
       <sensor name="camera" type="camera">
         <pose>0 0 0 0 0 0</pose>
         <camera>
-          <triggered>true</triggered>
-          <trigger_topic>/camera/trigger</trigger_topic>
-          <optical_frame_id>/leader_camera</optical_frame_id>
-          <camera_info_topic>/camera/camera_info</camera_info_topic>
           <image>
             <width>640</width>
             <height>480</height>

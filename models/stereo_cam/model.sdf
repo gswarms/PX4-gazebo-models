@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.9'>
+  <model name='stereo_cam'>
+    <pose>0 0 0 0 0 0</pose>
+    <self_collide>false</self_collide>
+    <static>false</static>
+
+    <link name="stereo_cam/base_link">
+      <inertial>
+        <pose>0.03 0.03 0.03 0 0 0</pose>
+        <mass>0.050</mass>
+        <inertia>
+          <ixx>0.00004</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00004</iyy>
+          <iyz>0</iyz>
+          <izz>0.00004</izz>
+        </inertia>
+      </inertial>
+
+      <sensor name="left_camera" type="camera">
+        <pose>0 0.035 0 0 0 0</pose>
+        <camera>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>L8</format>
+          </image>
+          <lens>
+            <intrinsics>
+              <fx>384.0</fx>              <!-- calculated based on hfov = 80 [deg], width = 640, heigth = 480 -->
+              <fy>384.0</fy>
+              <cx>319.5</cx>
+              <cy>239.5</cy>
+            </intrinsics>
+          </lens>
+          <clip>
+            <near>0.1</near>
+            <far>20.0</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>20</update_rate>
+        <visualize>true</visualize>
+        <topic>/camera/left/image_raw</topic>
+      </sensor>
+
+      <sensor name="right_camera" type="camera">
+        <pose>0 -0.035 0 0 0 0</pose>
+        <camera>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>L8</format>
+          </image>
+          <lens>
+            <intrinsics>
+              <fx>384.0</fx>              <!-- calculated based on hfov = 80 [deg], width = 640, heigth = 480 -->
+              <fy>384.0</fy>
+              <cx>319.5</cx>
+              <cy>239.5</cy>
+            </intrinsics>
+          </lens>
+          <clip>
+            <near>0.1</near>
+            <far>20.0</far>
+          </clip>
+        </camera>
+        <always_on>1</always_on>
+        <update_rate>20</update_rate>
+        <visualize>true</visualize>
+        <topic>/camera/right/image_raw</topic>
+      </sensor>
+
+      <gravity>true</gravity>
+      <velocity_decay/>
+    </link>
+  </model>
+</sdf>
