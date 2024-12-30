@@ -22,6 +22,8 @@
       <sensor name="left_camera" type="camera">
         <pose>0 0.035 0 0 0 0</pose>
         <camera>
+          <trigger>true</trigger>
+          <trigger_topic>/camera/trigger</trigger_topic>
           <image>
             <width>640</width>
             <height>480</height>
@@ -49,6 +51,8 @@
       <sensor name="right_camera" type="camera">
         <pose>0 -0.035 0 0 0 0</pose>
         <camera>
+          <trigger>true</trigger>
+          <trigger_topic>/camera/trigger</trigger_topic>
           <image>
             <width>640</width>
             <height>480</height>
