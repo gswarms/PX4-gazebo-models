@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <sdf version="1.9">
   <world name="default">
     <physics type="ode">
@@ -18,7 +18,6 @@
       <render_engine>ogre2</render_engine>
     </plugin>
     <gui fullscreen="false">
-      <!-- 3D scene -->
       <plugin filename="MinimalScene" name="3D View">
         <gz-gui>
           <title>3D View</title>
@@ -35,7 +34,6 @@
           <far>25000</far>
         </camera_clip>
       </plugin>
-      <!-- Plugins that add functionality to the scene -->
       <plugin filename="EntityContextMenuPlugin" name="Entity context menu">
         <gz-gui>
           <property key="state" type="string">floating</property>
@@ -212,45 +210,6 @@
       <pose>0 0 0 0 -0 0</pose>
       <self_collide>false</self_collide>
     </model>
-    <!-- <model name="target">
-      <static>false</static>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <sphere>
-              <radius>0.5</radius>
-            </sphere>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <sphere>
-              <radius>0.5</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <ambient>1 0 0 1</ambient>
-            <diffuse>1 0 0 1</diffuse>
-            <specular>0.5 0.5 0.5 1</specular>
-          </material>
-        </visual>
-        <pose>5.0 0 0.25 0 0 0</pose>
-        <gravity>false</gravity>
-      </link>
-      <pose>5.0 0 0.25 0 0 0</pose>
-      <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
-        <label>1</label>
-      </plugin>
-    </model> -->
-    <model name="target">
-      <static>true</static>
-      <include>
-        <uri>model://sh_136</uri>
-      </include>
-      <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
-        <label>1</label>
-      </plugin>
-    </model>
     <light name="sunUTC" type="directional">
       <pose>0 0 500 0 -0 0</pose>
       <cast_shadows>true</cast_shadows>
@@ -277,5 +236,26 @@
       <longitude_deg> 8.546163739800146</longitude_deg>
       <elevation>0</elevation>
     </spherical_coordinates>
+    <model name="target_0">
+      <static>false</static>
+      <gravity>false</gravity>
+      <include>
+        <uri>model://sh_136</uri>
+      </include>
+    </model>
+    <model name="target_1">
+      <static>false</static>
+      <gravity>false</gravity>
+      <include>
+        <uri>model://sh_136</uri>
+      </include>
+    </model>
+    <model name="target_2">
+      <static>false</static>
+      <gravity>false</gravity>
+      <include>
+        <uri>model://sh_136</uri>
+      </include>
+    </model>
   </world>
 </sdf>
