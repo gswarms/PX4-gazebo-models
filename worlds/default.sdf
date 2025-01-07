@@ -237,22 +237,16 @@
       <elevation>0</elevation>
     </spherical_coordinates>
     <model name="target_0">
-      <static>false</static>
-      <gravity>false</gravity>
       <include>
         <uri>model://sh_136</uri>
       </include>
     </model>
     <model name="target_1">
-      <static>false</static>
-      <gravity>false</gravity>
       <include>
         <uri>model://sh_136</uri>
       </include>
     </model>
     <model name="target_2">
-      <static>false</static>
-      <gravity>false</gravity>
       <include>
         <uri>model://sh_136</uri>
       </include>
