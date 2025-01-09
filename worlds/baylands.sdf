@@ -208,15 +208,5 @@
         <uri>model://sh_136</uri>
       </include>
     </model>
-    <model name="target_1">
-      <include>
-        <uri>model://sh_136</uri>
-      </include>
-    </model>
-    <model name="target_2">
-      <include>
-        <uri>model://sh_136</uri>
-      </include>
-    </model>
   </world>
 </sdf>
