@@ -2,9 +2,11 @@
 <sdf version="1.9">
   <world name="default">
     <physics type="ode">
-      <max_step_size>0.004</max_step_size>
+      <max_step_size>0.01</max_step_size>
       <real_time_factor>1.0</real_time_factor>
       <real_time_update_rate>250</real_time_update_rate>
+      <thread_position_correction>true</thread_position_correction>
+      <island_threads>5</island_threads>
     </physics>
     <plugin name="gz::sim::systems::Physics" filename="gz-sim-physics-system"/>
     <plugin name="gz::sim::systems::UserCommands" filename="gz-sim-user-commands-system"/>
