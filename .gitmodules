@@ -4,3 +4,9 @@
 [submodule "models/gs001"]
 	path = models/gs001
 	url = git@github.com:gswarms/gs001.git
+[submodule "pz001"]
+	path = pz001
+	url = git@github.com:gswarms/pz001.git
+[submodule "models/pz001"]
+	path = models/pz001
+	url = git@github.com:gswarms/pz001.git

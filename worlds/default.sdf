@@ -238,10 +238,5 @@
       <longitude_deg> 8.546163739800146</longitude_deg>
       <elevation>0</elevation>
     </spherical_coordinates>
-    <model name="target_0">
-      <include>
-        <uri>model://sh_136</uri>
-      </include>
-    </model>
   </world>
 </sdf>
