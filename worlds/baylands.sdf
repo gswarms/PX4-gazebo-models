@@ -207,7 +207,8 @@
     </include>
     <model name="target_0">
       <include>
-        <uri>model://sh_136</uri>
+        <uri>model://rc_cessna</uri>
+        <scale>2 2 2</scale>
       </include>
     </model>
   </world>
