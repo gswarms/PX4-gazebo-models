@@ -4,3 +4,6 @@
 [submodule "models/sh_136"]
 	path = models/sh_136
 	url = git@github.com:gswarms/sh_136.git
+[submodule "models/hornbill"]
+	path = models/hornbill
+	url = git@github.com:gswarms/hornbill.git
